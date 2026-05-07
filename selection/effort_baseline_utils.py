@@ -841,7 +841,7 @@ class Effort_Trainer(Trainer):
         
         elif self.get_sample_grad:
             try:
-                gradient = [None for _ in range(len(loss))]
+                gradient = [None for _ in range(len(loss))] 
                 for s_id, s_loss in enumerate(loss):
                     if s_id == len(loss)-1:
                         # self.accelerator.backward(s_loss)
